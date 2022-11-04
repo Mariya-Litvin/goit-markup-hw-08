@@ -1,0 +1,38 @@
+.clients__title {
+  @include font(700, 36px, 1.17, null);
+  text-align: center;
+  color: var(--accent-color-one);
+  margin-bottom: 50px;
+}
+
+.companies {
+  display: flex;
+  gap: 30px;
+}
+
+.companies__items {
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+
+.companies__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: var(--clients-logo-color);
+  border: 1px solid var(--clients-logo-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    border var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-two);
+    border: 1px solid var(--accent-color-two);
+  }
+}
+
+.companies__logo {
+  fill: currentColor;
+}

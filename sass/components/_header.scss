@@ -1,0 +1,95 @@
+.header {
+  border-bottom: 1px solid var(--header-border-line-bottom);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include font(700, 26px, 1.19, null);
+  color: var(--accent-color-two);
+}
+
+.navigation__logo {
+  margin-right: 93px;
+}
+
+.logo__part--dark {
+  color: var(--main-color-dark);
+}
+
+.logo__part--light {
+  color: var(--main-color-light);
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu__link {
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--accent-color-one);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-two);
+  }
+}
+
+.menu__link--current {
+  position: relative;
+  color: var(--accent-color-two);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-color-two);
+    border-radius: 2px;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__link {
+  @include font(500, 14px, 1.14, 0.02em);
+  color: var(--secondary-color-font);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-two);
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

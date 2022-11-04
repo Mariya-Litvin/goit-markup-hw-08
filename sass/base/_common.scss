@@ -1,0 +1,23 @@
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  background: var(--main-color-light);
+  color: var(--accent-color-one);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

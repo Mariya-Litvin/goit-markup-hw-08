@@ -1,0 +1,34 @@
+.team {
+  background: var(--background-color-team);
+}
+
+.foto-card {
+  display: flex;
+  gap: 30px;
+}
+
+.foto-card__item {
+  background: var(--main-color-light);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 90px) / 4);
+}
+
+.foto-card__about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.foto-card__name {
+  @include font(500, 16px, 1.19, null);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.foto-card__position {
+  @include font(null, 16px, 1.19, null);
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--secondary-color-font);
+}

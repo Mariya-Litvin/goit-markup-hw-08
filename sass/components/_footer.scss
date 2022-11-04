@@ -1,0 +1,156 @@
+.footer {
+  background-color: var(--background-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.address__link {
+  @include font(400, 14px, 1.71, null);
+  color: var(--main-color-light);
+  font-style: normal;
+  margin-bottom: 9px;
+  display: block;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-two);
+  }
+}
+
+.address__email,
+.address__tel {
+  @include font(400, 14px, 1.71, null);
+  color: var(--footer-contact-color);
+  font-style: normal;
+  display: block;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color-two);
+  }
+}
+
+.address__email {
+  margin-bottom: 9px;
+}
+
+.footer-social {
+  display: block;
+  margin-left: 70px;
+}
+
+.footer-social__text {
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+  color: var(--main-color-light);
+  margin-bottom: 20px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-list__item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-list__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color-light);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-two);
+  }
+}
+
+.social-list__logo {
+  fill: currentColor;
+}
+
+.signup {
+  display: block;
+  margin-left: auto;
+}
+
+.signup__title {
+  @include font(700, 14px, 1.14, null);
+  text-transform: uppercase;
+  color: var(--main-color-light);
+  margin-bottom: 20px;
+}
+
+.signup-group {
+  display: flex;
+}
+
+.signup-group__input {
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-color-dark);
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  &::placeholder {
+    @include font(400, 16px, 1.25, null);
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color-two);
+  }
+}
+
+.signup-group__btn {
+  font-family: "Roboto", sans-serif;
+  @include font(700, 16px, 1.88, 0.06em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--main-color-light);
+  border: none;
+  margin: 0 auto;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: var(--accent-color-two);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-focus-color);
+  }
+}
+
+.signup-group__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
