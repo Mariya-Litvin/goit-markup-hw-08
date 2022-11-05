@@ -518,16 +518,29 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 165px;
+  }
 }
 
 .footer__logo {
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
+  text-align: center;
+}
+
+.address {
+  text-align: center;
 }
 
 .address__link {
@@ -565,8 +578,7 @@ button {
 }
 
 .footer-social {
-  display: block;
-  margin-left: 70px;
+  margin-top: 60px;
 }
 
 .footer-social__text {
@@ -576,12 +588,14 @@ button {
   text-transform: uppercase;
   color: var(--main-color-light);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .social-list {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 .social-list__item {
@@ -609,8 +623,11 @@ button {
 }
 
 .signup {
-  display: block;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
 }
 
 .signup__title {
@@ -624,11 +641,19 @@ button {
 
 .signup-group {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .signup-group {
+    flex-direction: column;
+  }
 }
 
 .signup-group__input {
   padding: 15px 16px;
-  width: 358px;
+  width: 300px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -659,6 +684,11 @@ button {
 .signup-group__input:hover, .signup-group__input:focus {
   border-color: var(--accent-color-two);
 }
+@media screen and (min-width: 768px) {
+  .signup-group__input {
+    width: 450px;
+  }
+}
 
 .signup-group__btn {
   font-family: "Roboto", sans-serif;
@@ -675,7 +705,7 @@ button {
   margin: 0 auto;
   min-width: 200px;
   height: 50px;
-  margin-left: 12px;
+  margin-top: 20px;
   background-color: var(--accent-color-two);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
