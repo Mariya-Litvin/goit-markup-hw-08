@@ -1,8 +1,12 @@
 .clients__title {
-  @include font(700, 36px, 1.17, null);
+  @include font(700, 28px, 1.18, null);
   text-align: center;
   color: var(--accent-color-one);
   margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 36px, 1.17, null);
+  }
 }
 
 .companies {
@@ -12,7 +16,6 @@
 }
 
 .companies__items {
-  // width: calc((100% - 150px) / 6);
   height: 92px;
   flex-basis: calc((100% - 30px) / 2);
 

@@ -14,8 +14,12 @@
 
 .logo {
   font-family: "Raleway", sans-serif;
-  @include font(700, 26px, 1.19, null);
+  @include font(700, 24px, 1.17, null);
   color: var(--accent-color-two);
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 1.19, null);
+  }
 }
 
 .navigation__logo {

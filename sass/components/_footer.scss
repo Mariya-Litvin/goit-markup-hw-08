@@ -2,31 +2,38 @@
   background-color: var(--background-color-dark);
   padding-top: 60px;
   padding-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
-    // padding-left: 76px;
-    // padding-right: 89px;
-  }
 }
 
 .footer__container {
-  display: flex;
-  // align-items: baseline;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-  @media screen and (min-width: 768px) {
-    // flex-direction: row;
-    // flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
   }
 }
 
 .footer__wrap {
-  @media screen and (min-width: 768px) {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     align-items: baseline;
     gap: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
 }
 
@@ -34,23 +41,32 @@
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .address {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .address__link {
   @include font(400, 14px, 1.71, null);
   color: var(--main-color-light);
   font-style: normal;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   display: block;
   transition: color var(--transition-duration) var(--transition-timing-function);
   &:hover,
   &:focus {
     color: var(--accent-color-two);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
   }
 }
 
@@ -68,13 +84,22 @@
 }
 
 .address__email {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-social {
-  // display: block;
-  // margin-left: 70px;
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: 70px;
+  }
 }
 
 .footer-social__text {
@@ -82,14 +107,20 @@
   text-transform: uppercase;
   color: var(--main-color-light);
   margin-bottom: 20px;
-  text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .social-list {
   display: flex;
   gap: 10px;
   justify-content: center;
-  align-items: center;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
 }
 
 .social-list__item {
@@ -119,13 +150,18 @@
 }
 
 .signup {
-  // display: block;
-  // margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .signup__title {
@@ -137,18 +173,16 @@
 
 .signup-group {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .signup-group__input {
   padding: 15px 16px;
-  // width: 358px;
   width: 300px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -170,6 +204,10 @@
   @media screen and (min-width: 768px) {
     width: 450px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .signup-group__btn {
@@ -184,8 +222,6 @@
   margin: 0 auto;
   min-width: 200px;
   height: 50px;
-  margin-top: 20px;
-  // margin-left: 12px;
   background-color: var(--accent-color-two);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -194,6 +230,14 @@
   &:hover,
   &:focus {
     background-color: var(--hover-focus-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 
