@@ -6,7 +6,21 @@
 
 .filter-cards__item {
   background: var(--main-color-light);
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .filter-cards__link {
@@ -41,10 +55,16 @@
 }
 
 .filter-cards__about {
-  padding: 20px 24px;
+  padding: 20px 24px 20px 24px;
   border-bottom: 1px solid var(--portfolio-cards-border);
   border-left: 1px solid var(--portfolio-cards-border);
   border-right: 1px solid var(--portfolio-cards-border);
+}
+
+.filter-cards__about--padding-btm {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 20px 24px 56px 24px;
+  }
 }
 
 .filter-cards__title {

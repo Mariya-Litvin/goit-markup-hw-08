@@ -14,8 +14,9 @@
   top: 50%;
   left: 50%;
   padding: 40px;
-  min-height: 581px;
-  min-width: 528px;
+  height: 609px;
+  width: 450px;
+  max-width: 96%;
   background-color: var(--main-color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,6 +24,11 @@
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
+
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -56,9 +62,13 @@
 }
 
 .modal__title {
-  @include font(700, 20px, 1.15, null);
+  @include font(700, 20px, 1.5, null);
   text-align: center;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 20px, 1.15, null);
+  }
 }
 
 .form__field {
@@ -120,8 +130,12 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    @include font(400, 12px, 1.17, 0.01em);
+    @include font(400, 14px, 1.14, 0.01em);
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      @include font(400, 12px, 1.17, 0.01em);
+    }
   }
 }
 
@@ -140,16 +154,24 @@
 
 .checkbox-agree__text {
   margin-left: 8px;
-  @include font(400, 14px, 1.71, null);
+  @include font(400, 12px, 1.17, null);
   color: var(--secondary-color-font);
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 1.71, null);
+  }
 }
 
 .checkbox-agree__link {
   margin-left: 4px;
-  @include font(400, 14px, 1.71, null);
+  @include font(400, 12px, 1.17, null);
   text-decoration-line: underline;
   color: var(--accent-color-two);
   text-underline-offset: 3px;
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 1.71, null);
+  }
 }
 
 .checkbox-agree__input {
