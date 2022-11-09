@@ -6,6 +6,9 @@
   height: 100%;
   z-index: 1;
   padding: 48px 40px;
+  transform: translateY(0);
+  transition: opacity var(--transition-duration) var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
   > .container-wrap {
     height: 100%;
     display: flex;
