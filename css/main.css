@@ -1387,8 +1387,14 @@ button {
   justify-content: center;
 }
 
-.checkbox-agree__text {
+.checkbox-agree__label > .checkbox-agree__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
   margin-left: 8px;
+}
+
+.checkbox-agree__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1403,7 +1409,6 @@ button {
 }
 
 .checkbox-agree__link {
-  margin-left: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
