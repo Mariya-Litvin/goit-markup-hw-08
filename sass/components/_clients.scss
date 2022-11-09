@@ -4,7 +4,7 @@
   color: var(--accent-color-one);
   margin-bottom: 50px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(700, 36px, 1.17, null);
   }
 }
@@ -19,11 +19,11 @@
   height: 92px;
   flex-basis: calc((100% - 30px) / 2);
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc((100% - 60px) / 3);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-basis: calc((100% - 150px) / 6);
   }
 }

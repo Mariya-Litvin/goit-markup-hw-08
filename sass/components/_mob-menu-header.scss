@@ -32,7 +32,7 @@
     fill: var(--accent-color-one);
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
@@ -52,7 +52,7 @@
     fill: var(--accent-color-two);
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }

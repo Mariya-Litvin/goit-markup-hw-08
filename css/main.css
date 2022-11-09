@@ -35,7 +35,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -508,8 +507,10 @@ button {
   background-color: var(--hover-focus-color);
 }
 
-.advantages.section {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .advantages.section {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__list {
@@ -1116,15 +1117,9 @@ button {
   background: var(--main-color-light);
   width: 100%;
 }
-.filter-cards__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .filter-cards__item {
     flex-basis: calc((100% - 30px) / 2);
-  }
-  .filter-cards__item:not(:last-child) {
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {

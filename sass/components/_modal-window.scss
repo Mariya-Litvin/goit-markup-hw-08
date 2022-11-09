@@ -25,7 +25,7 @@
   transition: transform var(--transition-duration) var(--transition-timing-function),
     opacity var(--transition-duration) var(--transition-timing-function);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     min-height: 581px;
     min-width: 528px;
   }
@@ -66,7 +66,7 @@
   text-align: center;
   margin-bottom: 12px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(700, 20px, 1.15, null);
   }
 }
@@ -133,7 +133,7 @@
     @include font(400, 14px, 1.14, 0.01em);
     color: rgba(117, 117, 117, 0.5);
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       @include font(400, 12px, 1.17, 0.01em);
     }
   }
@@ -157,7 +157,7 @@
   @include font(400, 12px, 1.17, null);
   color: var(--secondary-color-font);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(400, 14px, 1.71, null);
   }
 }
@@ -169,7 +169,7 @@
   color: var(--accent-color-two);
   text-underline-offset: 3px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(400, 14px, 1.71, null);
   }
 }

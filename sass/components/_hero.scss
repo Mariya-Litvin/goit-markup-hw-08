@@ -3,7 +3,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -24,7 +24,7 @@
       url("../images/hero_bg_mob_2x.jpg");
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url("../images/hero_bg_tab.jpg");
     @include retina {
@@ -34,7 +34,7 @@
     max-width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -56,7 +56,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(900, 44px, 1.36, 0.06em);
     max-width: 696px;
   }
