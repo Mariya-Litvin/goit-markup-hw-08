@@ -16,6 +16,9 @@
     justify-content: space-between;
     overflow: auto;
   }
+  @include tablet {
+    display: none;
+  }
 }
 
 .header__mob-menu.is-hidden {
